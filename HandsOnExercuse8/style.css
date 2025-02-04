@@ -1,0 +1,113 @@
+/* CSS Custom Variables */
+:root {
+    --primary-color: burlywood;
+    --secondary-color: blanchedalmond;
+    --font-family: 'Arial', 'Helvetica', sans-serif;
+    --text-color: black;
+    --background-color: whitesmoke;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-image: url("images/website\ cover\ photo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+/* Responsive Card Styling */
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.container {
+    padding: 1rem;
+}
+
+/* Pseudo-Classes and Pseudo-Elements */
+.button1:hover {
+    opacity: 0.75;
+}
+
+.button1:active {
+    opacity: 0.5;
+}
+
+/* Footer Styling */
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
